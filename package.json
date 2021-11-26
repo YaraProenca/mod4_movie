@@ -1,0 +1,22 @@
+{
+  "name": "mod4_movie",
+  "version": "1.0.0",
+  "description": "Api para projeto de fim de módulo Resilia Educação.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaraProenca/mod4_movie.git"
+  },
+  "author": "Yara Proença",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaraProenca/mod4_movie/issues"
+  },
+  "homepage": "https://github.com/YaraProenca/mod4_movie#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
