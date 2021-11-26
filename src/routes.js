@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createTable, insertMovie, updateMovie, selectMovies, selectMovie, deleteMovie } from "./controller/movie.js";
+import { createTable, insertMovie, updateMovie, selectMovies, selectMovie, deleteMovie } from "./DAO/movieDAO.js";
 
 const router = Router()
 
