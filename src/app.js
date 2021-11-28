@@ -1,14 +1,14 @@
 import express from 'express'
-import fs from 'fs'
 import https from 'https'
 import cors from 'cors'
+
 
 const PORT = process.env.PORT || 3003
 const app = express()
 app.use(express.json())
 app.use(cors())
 
-import router from './routes.js'
+import router from './controller/movie.js'
 app.use(router)
 
 app.listen(PORT, () => console.log('api working'))
