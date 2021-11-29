@@ -6,7 +6,7 @@ const router = Router()
 router.get('/', (req, res) => {
   res.json({
     "statusCode": 200,
-    " msg": "API Working"
+    " msg": "This API is Working right now"
   })
 })
 
