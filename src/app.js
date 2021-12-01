@@ -11,7 +11,7 @@ app.use(cors())
 import router from './controller/movie.js'
 app.use(router)
 
-app.listen(PORT, () => console.log('api working'))
+app.listen(PORT, () => console.log('API working'))
 
 https.createServer({
   cert: process.env.CODE_CRT,
