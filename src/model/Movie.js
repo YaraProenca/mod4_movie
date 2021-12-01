@@ -3,11 +3,10 @@ import { insertMovie, updateMovie, selectMovies, selectMovie, deleteMovie } from
 class Movie {
     static async selectMovie(req, res) {
     try {
-      let deuBom = await selectMovie(req, res)
-      res.status(200).json(deuBom) 
+      let itIsOk = await selectMovie(req, res)
+      res.status(200).json(itIsOk) 
     } catch (error) {
-      console.log(error);
-      res.status(500).json(error.message)
+      res.status(400).json(error.message)
     }
   }
 
