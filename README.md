@@ -26,7 +26,7 @@ As dependencias podem ser encontradas <a href = 'https://github.com/YaraProenca/
 ```
 git clone https://github.com/YaraProenca/mod4_movie.git && npm install
 ```
-Essas são as dependencias necessárias para o ambiente de desenvolvimento da aplicação, caso deseje instalar utilize os comandos localizados neste <a hrerf = "https://www.npmjs.com/">site</a> em seu terminal.
+Essas são as dependencias necessárias para o ambiente de desenvolvimento da aplicação, caso deseje instalar utilize os comandos localizados neste <a hrerf = 'https://www.npmjs.com/'>site</a> em seu terminal.
 
 
 ## Inicialização da aplicação via terminal:
@@ -50,7 +50,7 @@ POST
 PATCH
 DELETE
 ````
-As mesmas podem ser encontradas neste <a hrerf="https://github.com/YaraProenca/mod4_movie/blob/main/src/controller/movie.js">arquivo </a>
+As mesmas podem ser encontradas neste <a hrerf='https://github.com/YaraProenca/mod4_movie/blob/main/src/controller/movie.js'>arquivo </a>
 
 <br>
 
@@ -72,11 +72,8 @@ As mesmas podem ser encontradas neste <a hrerf="https://github.com/YaraProenca/m
 
 ## Hospedagem API:
 
-Você também poderá encontrar esta API na seguinte hospedagem:
-```
-https://mod4-api.herokuapp.com/
-```
-<br>
+Você também poderá encontrar esta API na seguinte hospedagem: <a hrerf= ' https://mod4-api.herokuapp.com/ '> Heroku </a>
+
 
 
 
