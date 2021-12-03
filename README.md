@@ -2,12 +2,9 @@
 
 ## Descrição da aplicação:
 
+A aplicação é um ambiente back-end com as informações dos filmes disponíveis em nossa rede de cinemas CineOne. Para isso foi utilizado o banco de dados relacional SQLite, foi utilizado o padrão do tipo CRUD e como organização conceitos de MVC.
+
 <br>
-
-### Exemplo de retorno da aplicação:
-
-
-```
 
 ## Ferramentas utilizadas:
 Para o desenvolvimento como já mencionado foi utilizado JavaScript com NodeJS como linguagem da aplicação e o Express como framework, hospedado pela ferramenta de cloud Heroku.
@@ -29,22 +26,14 @@ As dependencias podem ser encontradas <a href = 'https://github.com/YaraProenca/
 ```
 git clone https://github.com/YaraProenca/mod4_movie.git && npm install
 ```
-## Dependencias de desenvolvimento:
-```js
-"devDependencies": {
-    "dotenv": "^10.0.0"
-  }
-```
-Em outra parte do <a href = '#'>arquivo</a> de configuração é possível encontrar o código acima que foi extraído do mesmo, essas são as dependencias necessárias para o ambiente de desenvolvimento da aplicação, caso deseje instalar utilize os comandos abaixo em seu terminal logo após o comando das dependencias obrigatórias.
+Essas são as dependencias necessárias para o ambiente de desenvolvimento da aplicação, caso deseje instalar utilize os comandos localizados neste <a hrerf = "https://www.npmjs.com/">site</a> em seu terminal.
 
-```
-npm install --save-dev dotenv
-```
+
 ## Inicialização da aplicação via terminal:
 Para inicio da aplicação basta abrir o terminal na pasta do projeto ou executar o código abaixo  na sequencia dos códigos acima caso seja a primeira execução, esteja na sequencia dos comandos acima e com o seu banco de dados já conectado seja ele local ou em nuvem.
 
 ```
-npm start
+npm run dev
 ```
 
 ## Observação importante:
@@ -53,13 +42,41 @@ A versão NodeJs utilizada para desenvolvimento é a 16.x LTS, logo é necessár
 
 ## Rotas da api:
 
-No presente momento temos apenas a rota <b>"/"</b> onde podemos fazer o método GET passando como parametros da url querys ilimitadas contendo o endereço, aconselha-se tratar os endereços com o método <i>encodeURIComponent()</i> antes de colocalos na url de solicitação. abaixo segue a url da api no ar:
+No presente momento temos as seguintes rotas:
+
+````
+GET
+POST
+PATCH
+DELETE
+````
+As mesmas podem ser encontradas neste <a hrerf="https://github.com/YaraProenca/mod4_movie/blob/main/src/controller/movie.js">arquivo </a>
+
 <br>
+
+### Exemplo de retorno da aplicação:
+
+
+```
+[
+  {
+    "id": 1,
+    "filme": "HOMEM-ARANHA",
+    "classificacao": "L - Livre para todos os públicos",
+    "sinopse": "Peter Parker (Tobey Maguire) é um jovem estudioso que vive com seus tios, Ben (Cliff Robertson) e May (Rosemary Harris), desde que seus pais faleceram. Inteligente e com um grande interesse pela ciência, Peter tem dificuldade em se relacionar com seus colegas, por ser tímido e por eles o considerarem um nerd. Até que, em uma demonstração científica, um acidente inesperado faz com que aranha modificada geneticamente pique Peter. A partir de então seu corpo é quimicamente alterado pela picada da aranha, fazendo com que Peter possa escalar paredes e tetos, emitir pelos punhos um fluido ultra-resistente semelhante à uma teia de aranha e passe a ter um sentido de aranha, que o avisa sempre que há perigo por perto, além de superforça e visão ampliada. Inicialmente Peter pensa em usar seus novos poderes para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém, ao permitir que um ladrão fuja por não considerar sua função capturá-lo, o fugitivo acaba assassinando seu tio Ben. A partir de então, Peter decide não mais usar seus poderes para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio enfrentar o psicótico Duende Verde (Willem Dafoe), que na verdade é o empresário Norman Osborn após ter sido exposto à um gás experimental que lhe deu uma segunda personalidade e grande força física.",
+    "genero": "Ação Aventura Ficção Científica Super-herói"
+  }
+]
+```
+<br>
+
+## Hospedagem API:
+
+Você também poderá encontrar esta API na seguinte hospedagem:
+```
 https://mod4-api.herokuapp.com/
+```
 <br>
 
-## Exemplo de URL:
-<br>
 
-```
-```
+
